@@ -9,10 +9,10 @@ var style_DelimitaomunicipaldoRSIBGE_3 = function(feature, resolution){
     var value = ""
     var labelText = "";
     size = 0;
-    var labelFont = "9.1px \'Arial\', sans-serif";
+    var labelFont = "15.600000000000001px \'Arial\', sans-serif";
     var labelFill = "#000000";
-    var bufferColor = "";
-    var bufferWidth = 0;
+    var bufferColor = "#ffffff";
+    var bufferWidth = 0.5;
     var textAlign = "left";
     var offsetX = 8;
     var offsetY = 3;
@@ -21,7 +21,7 @@ var style_DelimitaomunicipaldoRSIBGE_3 = function(feature, resolution){
         labelText = String(feature.get("NOME"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(88,88,88,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}),
+        stroke: new ol.style.Stroke({color: 'rgba(99,99,99,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

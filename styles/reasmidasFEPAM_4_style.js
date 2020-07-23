@@ -22,7 +22,7 @@ var style_reasmidasFEPAM_4 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(114,133,132,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}),fill: new ol.style.Fill({color: 'rgba(140,200,195,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(114,133,132,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}),fill: new ol.style.Fill({color: 'rgba(87,201,144,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -37,4 +37,4 @@ var style_reasmidasFEPAM_4 = function(feature, resolution){
     return style;
 };
 
-    fill_reasmidasFEPAM_4.setColor(stripe(0.26, 2.0, 315.0, '#000000'));
+    fill_reasmidasFEPAM_4.setColor(stripe(0.13, 2.0, 315.0, '#000000'));
