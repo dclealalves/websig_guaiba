@@ -21,7 +21,7 @@ var style_RegiohidrogrficadoGuabaFEPAM_6 = function(feature, resolution){
         labelText = String(feature.get("NOME_BACIA"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(12,27,111,0.25)', lineDash: [10,5], lineCap: 'butt', lineJoin: 'miter', width: 0}),fill: new ol.style.Fill({color: 'rgba(129,176,246,0.25)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(12,27,111,1.0)', lineDash: [10,5], lineCap: 'butt', lineJoin: 'miter', width: 0}),fill: new ol.style.Fill({color: 'rgba(129,176,246,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
