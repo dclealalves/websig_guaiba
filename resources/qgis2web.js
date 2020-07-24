@@ -106,8 +106,24 @@ var map = new ol.Map({
 
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
+layerSwitcher.hidePanel = function() {};
+layerSwitcher.showPanel();
 
-map.getView().fit([-5753414.302941, -3570257.476346, -5636324.361369, -3494527.952782], map.getSize());
+
+    var searchLayer = new SearchLayer({
+      layer: lyr_DelimitaomunicipalRSIBGE_4,
+      colName: 'SEDE',
+      zoom: 10,
+      collapsed: true,
+      map: map
+    });
+
+    map.addControl(searchLayer);
+    document.getElementsByClassName('search-layer')[0]
+    .getElementsByTagName('button')[0].className +=
+    ' fa fa-binoculars';
+    
+map.getView().fit([-5750574.995255, -3567186.129073, -5636515.616878, -3493428.811177], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1

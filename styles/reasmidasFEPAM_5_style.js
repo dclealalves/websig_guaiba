@@ -10,8 +10,8 @@ var style_reasmidasFEPAM_5 = function(feature, resolution){
     var value = ""
     var labelText = "";
     size = 0;
-    var labelFont = "10px, sans-serif";
-    var labelFill = "#000000";
+    var labelFont = "13.0px \'Arial\', sans-serif";
+    var labelFill = "#005c00";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";
@@ -22,7 +22,7 @@ var style_reasmidasFEPAM_5 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(114,133,132,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}),fill: new ol.style.Fill({color: 'rgba(87,201,144,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(114,133,132,0.5)', lineDash: [10,5], lineCap: 'butt', lineJoin: 'miter', width: 1}),fill: new ol.style.Fill({color: 'rgba(87,201,144,0.5)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

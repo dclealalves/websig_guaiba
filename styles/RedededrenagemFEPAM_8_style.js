@@ -21,7 +21,7 @@ var style_RedededrenagemFEPAM_8 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(6,97,243,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0}),
+        stroke: new ol.style.Stroke({color: 'rgba(27,114,255,0.75)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 0}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
